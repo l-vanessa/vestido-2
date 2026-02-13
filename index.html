@@ -10,16 +10,23 @@
     <a-scene embedded arjs>
 
       <a-assets>
-        <a-asset-item id="base-model" src="base.glb"></a-asset-item>
+        <a-asset-item id="modelo-vestido" src="base (1).glb"></a-asset-item>
       </a-assets>
 
       <a-marker preset="hiro">
 
-        <a-entity gltf-model="#base-model"
+        <a-entity gltf-model="#modelo-vestido"
                   position="0 0 0"
-                  scale="1.5 1.5 1.5"
-                  animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+                  scale="0.5 0.5 0.5"
+                  animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
         </a-entity>
+
+        <a-text value="Modelo 3D - Vestidos"
+                position="0 1.5 0"
+                align="center"
+                color="red"
+                scale="2 2 2">
+        </a-text>
 
       </a-marker>
 
